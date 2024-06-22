@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score
 nltk.download('punkt')
 nltk.download('stopwords')
 
-def preprocess(text):
+def preprocess(text): 
     text = text.lower()
     text = re.sub(r'\d+', '', text)
     text = re.sub(r'[^\w\s]', '', text)
